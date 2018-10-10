@@ -1,0 +1,10 @@
+$k1 //szary-ciemny
+$k2 //szary-jasny
+$k3 //bialy
+$k4 //pomaranczowy-ciemny
+$k5 //pomaranczowy-jasny
+$k6 //bialy-ciemny
+
+
+ffd800 - zolty
+ff8400 - pomarañczowy

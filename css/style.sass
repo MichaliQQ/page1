@@ -1,0 +1,355 @@
+@font-face
+  font-family: Poppins-Light
+  src: url(../fonts/Poppins-Light.ttf)
+
+$h1: #111111
+$h2: black
+$h3: black
+$h4: black
+$h5: black
+$h6: black
+
+$k1: #111111 //szary-ciemny
+$k2: #1b1b1b //szary-jasny
+$k3: #FAFAFA //szary
+$k4: #ff8400 //pomaranczowy-ciemny
+$k5: #ffd800 //pomaranczowy-jasny
+$k6: #BABABA //bialy-ciemny
+
+//-------------------------------------------------
+
+html, body
+  height: 100%
+  width: 100%
+  font-family: Poppins-Light
+  background-color: $k1
+
+h1
+  color: $h1
+  font-variant: small-caps
+  font-size: 2.75rem
+
+h2
+  color: $h2
+
+h3
+  color: $h3
+
+h4
+  color: $h4
+
+h5
+  color: $h5
+
+h6
+  color: $h6
+
+p
+  color: $k6
+
+a
+  color: $k6
+
+hr
+  border-top: 2px solid $k2
+
+#przycisk
+  background-color: $k3
+  color: $k4
+
+#przycisk:hover
+  color: #ffd800
+  cursor: pointer
+
+.container-fluid
+  padding: 50px 0px
+  overflow: hidden
+
+.container
+  padding: 50px 0px
+  overflow: hidden
+
+.row
+  margin: 25px 0px
+
+.z-dolu
+  opacity: 0
+  transform: translateY(30px)
+  transition: 1s ease-in-out
+
+.z-gory
+  opacity: 0
+  transform: translateY(-30px)
+  transition: 1s ease-in-out
+
+.z-lewej
+  opacity: 0
+  transform: translateX(-30px)
+  transition: 1s ease-in-out
+
+.z-lewej-opoznienie
+  opacity: 0
+  transform: translateX(-30px)
+  transition: 1s ease-in-out
+
+.z-prawej
+  opacity: 0
+  transform: translateX(30px)
+  transition: 1s ease-in-out
+
+.aktywny
+  opacity: 1
+  transform: translateY(0px)
+
+.active
+  border-bottom: 2px solid $k5
+
+//-------------------------------------------------
+
+.nav-link
+  color: $k3 !important
+
+.nav-link:hover
+  color: $k5 !important
+
+.nawigacja-on
+  background-color: $k1
+  transition: .2s
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75)
+
+.nawigacja-off
+  background-color: rgba(0,0,0,0)
+  transition: .2s
+  position: fixed
+  z-index: 550
+
+#naglowek
+  width: 100%
+  height: 100%
+  background: url('../img/2-4.png') center center no-repeat fixed
+  background-size: cover
+  min-height: 600px
+
+  .container-fluid
+    padding: 0
+    position: fixed
+    z-index: 550
+
+  .nawigacja
+    font-variant: small-caps
+    font-family: Poppins-Light
+    font-size: 20px
+    letter-spacing: 1px
+    padding: 0
+
+#naglowek-tlo
+  width: 100%
+  height: 100%
+  align-items: center
+  display: flex
+
+#naglowek-tekst
+  margin: 0 auto
+  text-align: center
+  h1
+    font-weight: bold
+    text-transform: uppercase
+    color: $k3
+  p
+    font-weight: 450
+    color: $k3
+
+//-------------------------------------------------
+
+#o-firmie
+  background-color: $k1
+  color: $k3
+  margin-bottom: 100px
+
+  h1
+    text-align: center
+    color: $k4
+
+  #box
+    align-items: center
+
+    #zdj
+      text-align: center
+
+    img
+      width: 50%
+
+    .row h1
+      text-align: left !important
+
+//-------------------------------------------------
+
+#produkty
+  background-color: $k1
+
+  .container-fluid
+    padding: 0
+
+  #prod
+    margin: 0
+    background-color: white
+
+  h1
+    text-align: center
+    color: $k4
+
+  .col-md-3
+    position: relative
+    padding: 0
+    overflow: hidden
+
+  .row
+    display: flex
+    justify-content: center
+
+  img
+    width: 100%
+    filter: grayscale(100%)
+    transition: .3s
+
+  img:hover
+    cursor: pointer
+    filter: grayscale(0%)
+    transform: scale(1.05)
+
+//-------------------------------------------------
+
+#produkcja
+  background-color: $k1
+  color: $k6
+
+  .col-md-4
+    background-color: $k5
+
+  h1
+    text-align: center
+    color: $k4
+
+  #box
+    align-items: center
+
+    #zdj
+      text-align: center
+      margin: 0
+      padding: 0
+
+    img
+      width: 100%
+      height: 100%
+
+
+//-------------------------------------------------
+
+#wspolpraca
+  background-color: $k2
+  color: $k6
+  text-align: center
+
+  #trzy
+    display: flex
+    align-items: center
+
+  #wspolpraca-zdj
+    background: url('../img/img22.png') center center no-repeat fixed
+    background-size: cover
+    position: relative
+    padding: 0
+    height: 500px
+
+  h1
+    text-align: center
+    color: $k4
+
+  #bok
+    background-color: $k1
+    margin: 50px 0px
+    padding: 25px
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75)
+
+    img
+      width: 100%
+
+  #srodek
+    background-color: $k4
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75)
+    padding: 25px
+    position: relative
+    z-index: 10
+    color: $k2
+
+
+//-------------------------------------------------
+
+#partnerzy
+  background-color: $k1
+  color: $k6
+  text-align: justify
+
+  h1
+    text-align: center
+    color: $k4
+
+  .row
+    align-items: center
+    display: flex
+
+  #partnerzy-zdj
+    margin: 25px 0px
+    padding: 25px
+
+    img
+      width: 100%
+
+  #partnerzy-opis
+    margin: 25px 0px
+    padding: 25px
+
+//-------------------------------------------------
+
+#kontakt
+  background-color: $k4
+  color: $k6
+  text-align: center
+
+  .container
+    padding-bottom: 0
+
+
+  #kontakt-zdj
+    background: url('../img/img3.png') center center no-repeat fixed
+    background-size: cover
+    position: relative
+
+  #kontakt-tlo
+    background-color: rgba(0, 0, 0, 0.8)
+
+  #kontakt-dane
+    img
+      width: 50px
+      margin: 25px
+
+    div
+      float: left
+      padding: 10px
+
+
+  h1
+    color: $k1
+  h4
+    margin-bottom: 15px
+
+  p
+    color: $k2
+
+  #stopka
+    margin-top: 150px
+    color: $k1
+
+
+//-------------------------------------------------
+//-------------------------------------------------
